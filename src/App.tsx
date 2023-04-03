@@ -1,14 +1,20 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import About from './pages/about/About';
 import Main from './pages/main/Main';
+import 'aos/dist/aos.css';
+import Skills from './pages/skills/Skills';
 
 function App() {
+
   return (
-    <div className="App">
+    <section className="App">
       <Routes>
         <Route path='/' element={<Main/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/skills' element={<Skills/>} />
       </Routes>
-    </div>
+    </section>
   );
 }
 

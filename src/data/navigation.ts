@@ -5,14 +5,14 @@ export const navigation = [
     },
     {
         name: 'Skills',
-        path: '/'
+        path: '/skills'
     },
     {
         name: 'Portfolio',
-        path: '/'
+        path: '/portfolio'
     },
     {
-        name: 'Contact',
-        path: '/'
+        name: 'Contacts',
+        path: '/contacts'
     },
 ]

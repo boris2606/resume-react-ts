@@ -8,7 +8,7 @@ const Contacts = () => {
     return (
         <main className='wrapper_contacts'>
             <div className='contacts_content'>
-                <p className='contacts_tit_text' data-aos="zoom-in" data-aos-duration="1300">contacts</p>
+                <p className='contacts_tit_text' data-aos="zoom-in" data-aos-duration="1300">contact</p>
                 <img className='contacts_hr' src={contactsHr} alt='About line'/>
                 <EmailJs/>
             </div>

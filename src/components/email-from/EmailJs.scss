@@ -1,10 +1,109 @@
 .email_form_content{
     margin: 0 auto;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
 }
 .contact_form{
     display: flex;
     gap: 30px;
     flex-flow: column;
+}
+.field_box{
+    display: flex;
+    flex-flow: column;
+}
+.form_inputs,
+.form_text,
+.PhoneInputInput{
+    background: transparent;
+    padding: 10px;
+    border-bottom: 3px solid #000;
+    border-left: 3px solid #000;
+    font:700 14px Montserrat;
+    outline: none;
+
+    &::placeholder{
+        text-transform: uppercase;
+    }
+}
+.descr_field_text{
+    font: 700 12px Raleway;
+}
+.PhoneInputCountry{
+    order: 2;
+    margin-left: 5px;
+}
+.PhoneInputCountryIcon{
+    width: 35px;
+    height: 24px;
+}
+.form_inputs{
+    min-height: 38px;
+}
+.form_text{
+    resize: none;
+    width: 100%;
+    min-height: 150px;
+}
+.submit_form_btn {
+    margin: 20px auto 40px;
+    width: 140px;
+    transition: .3s ease-in-out;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    font: 700 15px Montserrat;
+    color: #000;
+
+
+    &:hover{
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        border: none;
+
+        &::before{
+            border-color: #262626;
+            height: 100%;
+            transform: translateX(0);
+            transition: .3s transform linear, .3s height linear .3s;
+        }
+
+        &::after{
+            border-color: #262626;
+            height: 100%;
+            transform: translateX(0);
+            transition: .3s transform linear, .3s height linear .5s;
+        }
+    }
+
+    &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        box-sizing: border-box;
+        transform: translateX(-100%);
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        box-sizing: border-box;
+        transform: translateX(100%);
+    }
 }

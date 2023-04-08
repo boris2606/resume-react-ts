@@ -8,10 +8,13 @@ import { motion } from "framer-motion"
 import ButtonLink from '../../components/button-link/ButtonLink';
 import AOS from 'aos';
 import Footer from '../../components/footer/Footer';
+import ModalElement from '../../components/modal/ModalElement';
 
 
 const About = () => {
     const offers = useSelector((state: any) => state.toolkit.offers)
+    const educations = useSelector((state: any) => state.toolkit.educations)
+    const experience = useSelector((state: any) => state.toolkit.experience)
 
     useEffect(()=>{
         AOS.init()
@@ -38,6 +41,11 @@ const About = () => {
                             <p className='about_me_text'>
                                 I work on website development for 1.5 years and have some experience in freelancing, but I always strive for more experience, practice, and knowledge. I am decisive, stress-resistant, and always aim to deliver work at the highest level, putting in all efforts to achieve it. And also have an FOP own that facility work with customers
                             </p>
+                            <div className='wrapper_modal_btn'>
+                                <ModalElement name='Education' data={educations}/>
+                                <ModalElement name='Experience' data={experience}/>
+                                <a className='github_link' href='https://github.com/boris2606' target='_blank' rel='noreferrer'>GitHub</a>
+                            </div>
                         </div>
                     </div>
                 </motion.div>

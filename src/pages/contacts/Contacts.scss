@@ -1,0 +1,23 @@
+.wrapper_contacts{
+    min-height: 100vh;
+}
+.contacts_content{
+    padding: 100px 20px 0;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.contacts_tit_text{
+    font: 700 30px Montserrat;
+    border: 4px solid #000;
+    text-transform: uppercase;
+    padding: 20px;
+    max-width: 220px;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+.contacts_hr{
+    width: 130px;
+    margin: 30px auto;
+    display: block;
+}

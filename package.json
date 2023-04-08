@@ -17,6 +17,7 @@
     "@types/react-redux": "^7.1.25",
     "@types/react-router-dom": "^5.3.3",
     "aos": "^3.0.0-beta.6",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

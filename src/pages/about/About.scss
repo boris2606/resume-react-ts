@@ -26,7 +26,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    z-index: -1;
+    margin-bottom: 60px;
 }
 .about_photo_wrapper{
     overflow: hidden;
@@ -51,6 +51,77 @@
     position: relative;
     z-index: -1;
 }
+
+.wrapper_modal_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.github_link {
+    margin-top: 40px;
+    width: 140px;
+    transition: .3s ease-in-out;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    font: 700 15px Montserrat;
+    color: #000;
+
+
+    &:hover{
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        border: none;
+
+        &::before{
+            border-color: #262626;
+            height: 100%;
+            transform: translateX(0);
+            transition: .3s transform linear, .3s height linear .3s;
+        }
+
+        &::after{
+            border-color: #262626;
+            height: 100%;
+            transform: translateX(0);
+            transition: .3s transform linear, .3s height linear .5s;
+        }
+    }
+
+    &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        border-top: 3px solid transparent;
+        border-right: 3px solid transparent;
+        box-sizing: border-box;
+        transform: translateX(-100%);
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
+        box-sizing: border-box;
+        transform: translateX(100%);
+    }
+}
+
 .about_offer_tit{
     text-align: center;
     font: 700 30px Raleway;
@@ -94,6 +165,10 @@
 }
 @media screen and (max-device-width: 420px) {
     .about_introduce_block{
+        flex-flow: column;
+    }
+    .wrapper_modal_btn{
+        gap: 0;
         flex-flow: column;
     }
 }

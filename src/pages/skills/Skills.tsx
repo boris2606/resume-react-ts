@@ -4,13 +4,15 @@ import skillsHr from '../../img/hr_image.svg'
 import AOS from 'aos';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { useSelector } from 'react-redux';
-import { SkillsType } from '../../modelsTypes';
+import { SkillsType,CertificatesType } from '../../modelsTypes';
 import ButtonLink from '../../components/button-link/ButtonLink';
 import Footer from '../../components/footer/Footer';
+import { Link } from 'react-router-dom';
 
 const Skills = () => {
 
     const skills = useSelector((state:any) => state.toolkit.skills)
+    const certificates = useSelector((state:any) => state.toolkit.certificates)
 
     useEffect(() => {
         AOS.init() 
@@ -27,6 +29,7 @@ const Skills = () => {
                             <Tab className='tabs_btn' _selected={{ border: '2px solid black'}}>using now</Tab>
                             <Tab className='tabs_btn' _selected={{ border: '2px solid black'}}>learning</Tab>
                             <Tab className='tabs_btn' _selected={{ border: '2px solid black'}}>languages</Tab>
+                            <Tab className='tabs_btn' _selected={{ border: '2px solid black'}}>certificates</Tab>
                         </TabList>
 
                         <TabPanels>
@@ -60,6 +63,17 @@ const Skills = () => {
                                         </div>
                                     }
                                 })}
+                            </TabPanel>
+                            <TabPanel className='tab_content'>
+                                {certificates.map( (certificate:CertificatesType, index:number) => {
+                                        return <div className='certificate_box' key={index} >
+                                                    <p className='certificate_tit'>{certificate.title}</p>
+                                                    <button>
+                                                        <Link className='certificate_link' to={certificate.path} target='_blank' rel='noreferrer'>Watch certificate</Link>
+                                                    </button>
+                                                </div>
+                                    }
+                                )}
                             </TabPanel>
                         </TabPanels>
                     </Tabs>

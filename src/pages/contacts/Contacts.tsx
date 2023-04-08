@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import AOS from 'aos';
 import './Contacts.scss'
 import contactsHr from '../../img/hr_image.svg'
 import EmailJs from '../../components/email-from/EmailJs';
 import Footer from '../../components/footer/Footer';
 
 const Contacts = () => {
+    useEffect(() => {
+        AOS.init() 
+    })
     return (
         <main className='wrapper_contacts'>
             <div className='contacts_content'>

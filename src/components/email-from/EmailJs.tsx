@@ -5,7 +5,7 @@ import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 
 const EmailJs = () => {
-    const [value, setValue] = useState()
+    const [number, setNumber] = useState()
 
     function sendEmail(e:any) {
         e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
@@ -35,8 +35,8 @@ const EmailJs = () => {
                             international={true}
                             placeholder="Phone number"
                             name="person_phone"
-                            value={value}
-                            onChange={() => setValue}/>
+                            value={number}
+                            onChange={() => setNumber}/>
                         <p className='descr_field_text'>Enter the phone using the country code in the format 380(UA) or 1(USA) or select a country</p>
                     </div>
                     <div className='field_box'>

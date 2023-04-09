@@ -101,13 +101,5 @@ export const portfolio = [
         github: 'https://github.com/boris2606/todo-app-with-react',
         descr: 'Created for practice only, using React JS, Redux Toolkit, SPA, React router, LocalStorage',
         react: true
-    },
-    {
-        title: 'POSTS',
-        image: posts,
-        path: 'https://posts-project-with-react.netlify.app',
-        github: 'https://github.com/boris2606/react-posts',
-        descr: 'Created for practice only, using React JS, Redux, SPA, React router, LocalStorage',
-        react: true
     }
 ]

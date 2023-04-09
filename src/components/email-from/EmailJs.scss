@@ -19,8 +19,16 @@
     padding: 10px;
     border-bottom: 3px solid #000;
     border-left: 3px solid #000;
+    border-top:3px solid transparent;
+    border-right:3px solid transparent;
     font:700 14px Montserrat;
     outline: none;
+
+    &:focus{
+        border-top:3px solid #000;
+        border-right:3px solid #000;
+    }
+
     &::placeholder{
         text-transform: uppercase;
     }
@@ -40,6 +48,7 @@
 }
 .form_inputs{
     min-height: 38px;
+    transition: .5s all ease;
 }
 .form_text{
     resize: none;
@@ -117,3 +126,4 @@
     border-left: 3px solid red;
     border-bottom: 3px solid red;
 }
+

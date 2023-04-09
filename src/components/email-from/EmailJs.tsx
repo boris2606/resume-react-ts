@@ -33,7 +33,7 @@ const EmailJs = () => {
 
     function sendEmail(e:any) {
         e.preventDefault(); 
-        setNumber('')
+        setNumber(' ')
         setName('')
         setEmail('')
         setMessage('')

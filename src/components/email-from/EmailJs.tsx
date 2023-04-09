@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import AOS from 'aos';
 import './EmailJs.scss'
 import emailjs from 'emailjs-com';
 import 'react-phone-number-input/style.css'
@@ -12,6 +13,9 @@ const EmailJs = () => {
     const [email, setEmail] = useState<string>('')
     const [message, setMessage] = useState<string>('')
     
+    useEffect(() => {
+        AOS.init() 
+    })
 
     function validation(e:any){
         if(e.target.name === 'from_name'){
@@ -51,7 +55,7 @@ const EmailJs = () => {
         <section className='email_form_wrapper'>
             <div className='email_form_content'>
                 <form className="contact_form" onSubmit={sendEmail}>
-                    <div className='field_box'>
+                    <div className='field_box' data-aos="zoom-in" data-aos-duration="1000">
                         <input className='form_inputs' 
                                 type="text" 
                                 name="from_name" 
@@ -60,7 +64,7 @@ const EmailJs = () => {
                                 placeholder='Enter your name*' required/>
                         <p className='descr_field_text'>Please enter a name</p>
                     </div>
-                    <div className='field_box'>
+                    <div className='field_box' data-aos="zoom-in" data-aos-duration="1300">
                         <input className='form_inputs'
                                 type="email" 
                                 name="from_email" 
@@ -69,7 +73,7 @@ const EmailJs = () => {
                                 placeholder='Enter your email*' required/>
                         <p className='descr_field_text'>Email "...@.. . .."</p>
                     </div>
-                    <div className='phone_box'>
+                    <div className='phone_box' data-aos="zoom-in" data-aos-duration="1600">
                         <PhoneInput
                             international={true}
                             placeholder="Phone number"
@@ -78,7 +82,7 @@ const EmailJs = () => {
                             onChange={()=> setNumber}/>
                         <p className='descr_field_text'>Enter the phone using the country code in the format 380(UA) or 1(USA) or select a country</p>
                     </div>
-                    <div className='field_box'>
+                    <div className='field_box' data-aos="zoom-in" data-aos-duration="1900">
                         <textarea className='form_text'
                                     name="html_message"
                                     value={message}

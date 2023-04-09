@@ -16,19 +16,7 @@ const Header = () => {
             <section className='wrapper_content'>
                 <div className='wrapper_logo_box'>
                     <Link to='/'>
-                        <motion.img className='wrapper_logo' src={Logo} alt='Logo'
-                            initial={{ opacity: 0, scale: 0.5 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{
-                                duration: 0.3,
-                                ease: [0, 0.71, 0.2, 1.01],
-                                scale: {
-                                    type: "spring",
-                                    damping: 5,
-                                    stiffness: 100,
-                                    restDelta: 0.001
-                                }
-                            }} />
+                        <img className='wrapper_logo' src={Logo} alt='Logo'/>
                     </Link>
                 </div>
                 <nav className='header_nav'>

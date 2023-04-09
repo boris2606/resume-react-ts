@@ -63,19 +63,19 @@ export const portfolio = [
         react: false
     },
     {
-        title: 'TABACO PROJECT',
-        image: tabaco,
-        path: 'https://tabaco-magazine-react.netlify.app',
-        github: 'https://github.com/boris2606/tabaco-project',
-        descr: 'Сommercial project, using React JS, Redux toolkit, SPA, React router, LocalStorage',
-        react: true
-    },
-    {
         title: 'GAMES PROJECT',
         image: games,
         path: 'https://react-games-project.netlify.app',
         github: 'https://github.com/boris2606/games-project',
         descr: 'Created for practice only, using React JS, Redux Toolkit, SPA, React router, Rapid API (GAMES), Axios',
+        react: true
+    },
+    {
+        title: 'TABACO PROJECT',
+        image: tabaco,
+        path: 'https://tabaco-magazine-react.netlify.app',
+        github: 'https://github.com/boris2606/tabaco-project',
+        descr: 'Сommercial project, using React JS, Redux toolkit, SPA, React router, LocalStorage',
         react: true
     },
     {

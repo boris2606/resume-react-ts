@@ -1,0 +1,19 @@
+.wrapper_error,
+.error_content{
+    min-height: 100vh;
+}
+.error_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+}
+.error_number{
+    font: 900 190px Montserrat;
+}
+.error_text{
+    font: 900 50px Montserrat;
+}

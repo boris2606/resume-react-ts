@@ -27,6 +27,7 @@
     }
 }
 .descr_field_text{
+    color:#26262692;
     font: 700 12px Raleway;
 }
 .PhoneInputCountry{
@@ -107,4 +108,13 @@
         box-sizing: border-box;
         transform: translateX(100%);
     }
+}
+
+.checked{
+    border-left: 3px solid green;
+    border-bottom: 3px solid green;
+}
+.unchecked{
+    border-left: 3px solid red;
+    border-bottom: 3px solid red;
 }

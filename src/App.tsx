@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import Skills from './pages/skills/Skills';
 import Portfolio from './pages/portfolio/Portfolio';
 import Contacts from './pages/contacts/Contacts';
+import Error from './pages/404/Error';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path='/skills' element={<Skills/>} />
         <Route path='/portfolio' element={<Portfolio/>} />
         <Route path='/contacts' element={<Contacts/>} />
+        <Route path='*' element={<Error/>} />
       </Routes>
     </section>
   );

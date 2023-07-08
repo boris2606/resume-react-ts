@@ -11,6 +11,7 @@ import posts from '../img/portfolio/posts.jpeg'
 import resume from '../img/portfolio/resume.jpeg'
 import tabaco from '../img/portfolio/tabaco.jpeg'
 import todo from '../img/portfolio/todo.jpeg'
+import admin_panel from '../img/portfolio/admin_panel.jpeg'
 
 
 export const portfolio = [
@@ -68,6 +69,14 @@ export const portfolio = [
         path: 'https://react-games-project.netlify.app',
         github: 'https://github.com/boris2606/games-project',
         descr: 'Created for practice only, using React JS, Redux Toolkit, SPA, React router, Rapid API (GAMES), Axios',
+        react: true
+    },
+    {
+        title: 'Admin panel',
+        image: admin_panel,
+        path: 'https://login-form-with-mongodb.netlify.app',
+        github: 'https://github.com/boris2606/login-form-with-mongodb',
+        descr: 'Created for practice only, using React JS, MongoDB, Express, Mongoose, SPA, React router, Axios',
         react: true
     },
     {

@@ -8,6 +8,7 @@ import sass from '../img/skills/sass.svg'
 import ts from '../img/skills/ts.svg'
 import ukraine from '../img/skills/ukraine.svg'
 import usa from '../img/skills/usa.svg'
+import mongodb from '../img/skills/mongodb.webp'
 
 
 export const skills = [
@@ -16,6 +17,14 @@ export const skills = [
         descr: '',
         img: html,
         learning: false,
+        other: false,
+        lang: false
+    },
+    {
+        name: 'MongoDB',
+        descr: '',
+        img: mongodb,
+        learning: true,
         other: false,
         lang: false
     },

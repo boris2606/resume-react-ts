@@ -8,6 +8,14 @@ export const educations = [
         addition: true
     },
     {
+        title: 'CIKLUM & Prometheus',
+        specialty: 'Front-End The Ultimate Bootcamp for Beginners by Ciklum',
+        sertificate: 'https://drive.google.com/file/d/1CF1BvP8gdErhB4R_tySWW1gK3MlUfXCE/view?usp=drive_link',
+        date: 'April 2023 - July 2023',
+        location: 'Ukraine',
+        addition: true
+    },
+    {
         title: 'NATIONAL UNIVERSITY OF FOOD TECHNOLOGIES',
         specialty: 'Computer Science',
         sertificate: '',

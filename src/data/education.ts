@@ -1,17 +1,17 @@
 export const educations = [
     {
-        title: 'CURSOR EDUCATION',
-        specialty: 'Front-End Advanced course',
-        sertificate: 'https://drive.google.com/file/d/1wwoP-qJi7Y947XfIJAf9pQEcGrg92ghu/view',
-        date: 'December 2022 - March 2023',
-        location: 'Ukraine',
-        addition: true
-    },
-    {
         title: 'CIKLUM & Prometheus',
         specialty: 'Front-End The Ultimate Bootcamp for Beginners by Ciklum',
         sertificate: 'https://drive.google.com/file/d/1CF1BvP8gdErhB4R_tySWW1gK3MlUfXCE/view?usp=drive_link',
         date: 'April 2023 - July 2023',
+        location: 'Ukraine',
+        addition: true
+    },
+    {
+        title: 'CURSOR EDUCATION',
+        specialty: 'Front-End Advanced course',
+        sertificate: 'https://drive.google.com/file/d/1wwoP-qJi7Y947XfIJAf9pQEcGrg92ghu/view',
+        date: 'December 2022 - March 2023',
         location: 'Ukraine',
         addition: true
     },

@@ -12,6 +12,7 @@ import resume from '../img/portfolio/resume.jpeg'
 import tabaco from '../img/portfolio/tabaco.jpeg'
 import todo from '../img/portfolio/todo.jpeg'
 import admin_panel from '../img/portfolio/admin_panel.jpeg'
+import books_shop from '../img/portfolio/books-shop.jpeg'
 
 
 export const portfolio = [
@@ -69,6 +70,14 @@ export const portfolio = [
         path: 'https://react-games-project.netlify.app',
         github: 'https://github.com/boris2606/games-project',
         descr: 'Created for practice only, using React JS, Redux Toolkit, SPA, React router, Rapid API (GAMES), Axios',
+        react: true
+    },
+    {
+        title: 'X-COURSE TASK',
+        image: books_shop,
+        path: 'https://boris2606.github.io/prometheus-x-course-task/',
+        github: 'https://github.com/boris2606/prometheus-x-course-task',
+        descr: 'Created on CIKLUM & Prometheus course, using React JS, Context, SPA, React router, Fetch, Jest, React-testing-library',
         react: true
     },
     {

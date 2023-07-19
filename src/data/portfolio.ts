@@ -73,7 +73,7 @@ export const portfolio = [
         react: true
     },
     {
-        title: 'X-COURSE TASK',
+        title: 'Books shop',
         image: books_shop,
         path: 'https://boris2606.github.io/prometheus-x-course-task/',
         github: 'https://github.com/boris2606/prometheus-x-course-task',

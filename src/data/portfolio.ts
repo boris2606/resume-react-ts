@@ -81,14 +81,6 @@ export const portfolio = [
         react: true
     },
     {
-        title: 'Admin panel',
-        image: admin_panel,
-        path: 'https://login-form-with-mongodb.netlify.app',
-        github: 'https://github.com/boris2606/login-form-with-mongodb',
-        descr: 'Created for practice only, using React JS, MongoDB, Express, Mongoose, SPA, React router, Axios. Users: admin@gmail.com -> pass: admin, user@gmail.com -> pass: user',
-        react: true
-    },
-    {
         title: 'TABACO PROJECT',
         image: tabaco,
         path: 'https://tabaco-magazine-react.netlify.app',

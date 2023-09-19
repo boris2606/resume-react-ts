@@ -65,6 +65,13 @@ export const portfolio = [
         react: false
     },
     {
+        title: '22 ADS Advertesing',
+        image: games,
+        path: 'https://22ads.net',
+        descr: 'Сommercial project, using React JS',
+        react: true
+    },
+    {
         title: 'GAMES PROJECT',
         image: games,
         path: 'https://react-games-project.netlify.app',

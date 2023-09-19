@@ -69,7 +69,7 @@ const Portfolio = () => {
                                                     <p className='project_descr'>{project.descr}</p>
                                                     <div className='project_buttons'>
                                                         <a className='portfolio_link' href={project.path} target='_blank' rel='noreferrer'>VIEW PROJECT</a>
-                                                        <a className='portfolio_link' href={project.github} target='_blank' rel='noreferrer'>GITHUB</a>
+                                                        {project.github ? <a className='portfolio_link' href={project.github} target='_blank' rel='noreferrer'>GITHUB</a> : false}
                                                     </div>
                                                 </div>
                                             </div>

@@ -13,6 +13,7 @@ import tabaco from '../img/portfolio/tabaco.jpeg'
 import todo from '../img/portfolio/todo.jpeg'
 import admin_panel from '../img/portfolio/admin_panel.jpeg'
 import books_shop from '../img/portfolio/books-shop.jpeg'
+import ads from '../img/portfolio/22ADS.jpeg'
 
 
 export const portfolio = [
@@ -66,7 +67,7 @@ export const portfolio = [
     },
     {
         title: '22 ADS Advertesing',
-        image: games,
+        image: ads,
         path: 'https://22ads.net',
         descr: 'Сommercial project, using React JS',
         react: true

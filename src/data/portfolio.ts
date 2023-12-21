@@ -14,6 +14,7 @@ import todo from '../img/portfolio/todo.jpeg'
 import admin_panel from '../img/portfolio/admin_panel.jpeg'
 import books_shop from '../img/portfolio/books-shop.jpeg'
 import ads from '../img/portfolio/22ADS.jpeg'
+import slaser from '../img/portfolio/s-laser.jpeg'
 
 
 export const portfolio = [
@@ -67,7 +68,7 @@ export const portfolio = [
     },
     {
         title: 'S.Laser',
-        image: ads,
+        image: slaser,
         path: 'https://s-laser.net/',
         descr: 'Сommercial project, using React JS',
         react: true
@@ -109,22 +110,6 @@ export const portfolio = [
         path: 'https://resume-bs-react.netlify.app',
         github: 'https://github.com/boris2606/resume-react-ts',
         descr: 'My resume, using React JS, Redux, SPA, React router, TypeScript',
-        react: true
-    },
-    {
-        title: 'AUTH FROM',
-        image: auth,
-        path: 'https://auth-form-with-react.netlify.app',
-        github: 'https://github.com/boris2606/react-logIn-form',
-        descr: 'Created for practice only, using React JS, Redux, SPA, React router, LocalStorage',
-        react: true
-    },
-    {
-        title: 'TODO',
-        image: todo,
-        path: 'https://app-todo-with-react-js.netlify.app',
-        github: 'https://github.com/boris2606/todo-app-with-react',
-        descr: 'Created for practice only, using React JS, Redux Toolkit, SPA, React router, LocalStorage',
         react: true
     }
 ]

@@ -66,6 +66,13 @@ export const portfolio = [
         react: false
     },
     {
+        title: 'S.Laser',
+        image: ads,
+        path: 'https://s-laser.net/',
+        descr: 'Сommercial project, using React JS',
+        react: true
+    },
+    {
         title: '22 ADS Advertesing',
         image: ads,
         path: 'https://22ads.net',

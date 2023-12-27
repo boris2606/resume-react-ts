@@ -11,6 +11,7 @@ import tabaco from '../img/portfolio/tabaco.jpeg'
 import books_shop from '../img/portfolio/books-shop.jpeg'
 import ads from '../img/portfolio/22ADS.jpeg'
 import slaser from '../img/portfolio/s-laser.jpeg'
+import knpldkckpmr from '../img/portfolio/knpldkckpmr.jpeg'
 
 
 export const portfolio = [
@@ -64,7 +65,7 @@ export const portfolio = [
     },
     {
         title: 'КНП ЛДКЦ КПМР',
-        image: slaser,
+        image: knpldkckpmr,
         path: 'https://megapol-kp.com/',
         descr: 'Сommercial project, using React JS, MongoDB',
         react: true

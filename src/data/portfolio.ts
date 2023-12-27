@@ -63,6 +63,13 @@ export const portfolio = [
         react: false
     },
     {
+        title: 'КНП ЛДКЦ КПМР',
+        image: slaser,
+        path: 'https://megapol-kp.com/',
+        descr: 'Сommercial project, using React JS, MongoDB',
+        react: true
+    },
+    {
         title: 'S.Laser',
         image: slaser,
         path: 'https://s-laser.net/',
